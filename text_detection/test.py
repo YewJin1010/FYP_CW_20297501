@@ -14,6 +14,7 @@ processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-handwritten")
 processor.save_pretrained("test")
 model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-base-handwritten")
 model.config.save_pretrained("test")
+model.save_pretrained("test")
 
 # Load image from the IAM dataset
 #url = "water_bottle.jpg"
